@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-nav {
+            margin-right: 15px;
+        }
+    </style>
+    <title>{{name}} Report</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <p class="navbar-brand" href="#" style="color: white; text-decoration: none;" >TicketBooking</p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>{{name}} Report</h1>
+    <p>Hello {{ user_name }},</p>
+    
+    <p>Here is your {{name}} report:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Show Name</th>
+                <th>Seats Booked</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for detail in details %}
+            <tr>
+                <td>{{ detail.showname }}</td>
+                <td>{{ detail.seats }}</td>
+                <td>{{ detail.rating }}</td>
+                <td>{{ detail.review }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <p>Thank you for using our service. contact:<span style="color: blue;">ticketbooking@yahoo.com</span></p>
+</body>
+</html>

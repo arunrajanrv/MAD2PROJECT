@@ -1,0 +1,15 @@
+.ventitle {
+    display: flex;
+    justify-content: left;
+  }
+  
+.saml {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.container{
+  margin-top: 20px;
+}
+  
+  

@@ -1,0 +1,256 @@
+html{
+    height: 100%;
+  }
+  #loginbox {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 900px;
+  }
+  #log-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  /* Styling for venue box */
+  .venue-box {
+    color: white;
+    border-radius: 10px;
+    background-color: #dc3545;
+    background: linear-gradient(#dc3545, rgb(0, 0, 0));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .show-box {
+    color: black;
+    max-width: 400px;
+    background-color: #d1cccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: white;
+    margin: 0 5px;
+  }
+
+  .nav-link a {
+    color: white; /* Set the color to white for the anchor tag */
+    text-decoration: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row; /* Align the footer content in a row */
+    justify-content: space-between; /* Space out the content evenly */
+    background-color: #15171a !important;
+    padding: 10px 0;
+    margin-top: auto;
+    position: relative;
+    /* right: 0;
+    left: 0; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .stars {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .star-filled {
+    color: gold;
+    font-size: 24px;
+  }
+  .label-data-container {
+    gap: 10px;
+  }
+  
+  /* Additional styles for footer content alignment and movement */
+  .footer h4,
+  .footer p {
+    margin: 0; /* Remove default margin for cleaner alignment */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer p {
+    margin-top: 5px; /* Add some space between paragraphs */
+  }
+  .ticket {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+  }
+
+  .ticket-header {
+    text-align: center;
+  }
+
+  .ticket-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .ticket-subtitle {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+  }
+  .go-back-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .ticket-details {
+    margin-top: 20px;
+  }
+
+  .tbtn {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  .logg {
+    background-color: #e7e7e7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logg p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .logg a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+
+  .logg a:hover {
+    text-decoration: underline;
+  }
+
+  .logg ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logg li {
+    margin-right: 15px;
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .image-container {
+    flex-basis: calc(50% - 10px); /* Adjust as needed based on your design */
+    margin: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .trailer-container {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-left: 20px;
+  }
+  
+  .video-description {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .video-container {
+    margin-left: 20px;
+  }
+  
+  .description {
+    flex-grow: 1;
+  }
+  
+  .user-review {
+    margin-top: 20px;
+  }
+  
+  .user-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .rating {
+    color: gold;
+    font-size: 24px;
+  }
+  
+  .review {
+    margin-top: 10px;
+  }
+  
+  .star {
+    margin-right: 3px;
+  }
+
+.error-message{
+  color: #dc3545;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+</head>
+<body>
+    <h1>Monthly Report</h1>
+    <p>Hello {{ user_name }},</p>
+    
+    <p>Here is your monthly report:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Show Name</th>
+                <th>Seats Booked</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for detail in details %}
+            <tr>
+                <td>{{ detail.showname }}</td>
+                <td>{{ detail.seats }}</td>
+                <td>{{ detail.rating }}</td>
+                <td>{{ detail.review }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <p>Thank you for using our service.</p>
+    
+</body>
+</html>
